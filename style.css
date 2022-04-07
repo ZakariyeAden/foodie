@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 60%;
+}
+:root{
+  --primary-color: #f08c00;
+  --secondary-color: #000;
+  --font-size: 1.5rem;
+}
+/* Reuseable classes */
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.img{
+  width: 100%;
+}
+.aside-img{
+  width: 50%;
+}
+/* .container- {
+  max-width: 120rem;
+  margin: 0 auto;
+} */
+
+/* *************** */
+/* Header and Nav */
+/* *************** */
+nav{
+  /* font-size: 1.5rem; */
+}
+ul {
+ display: flex;
+ justify-content: flex-end;
+ align-content: center;
+ gap: 2rem;
+}
+li{
+  list-style: none;
+}
+.link,.company-name,.contact{
+  text-decoration: none;
+}
+.link:link,
+.link:visited{
+  color: var(--secondary-color);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.link:hover,
+.link:active{
+  color: #f08c00;
+}
+.contact:visited,
+.contact:link{
+  padding: 1rem 2rem;
+  background-color: #f08c00;
+  border-radius: 3rem;
+  color: #000;
+  font-size: 1.5rem;
+}
+.contact:hover,
+.contact:active{
+  background-color: #f59f00;
+}
+.company-name{
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.active{
+  color: var(--primary-color);
+}
+/* *************** */
+/* Hero */
+/* *************** */
+#hero-section{
+  padding: 9rem 0;
+}
+.text-box span{
+  color: #f08c00;
+  font-weight: 700;
+}
+.heading-primary{
+  font-size: 3rem;
+}
+/* Helper Classes */
+ul li:nth-child(4){
+  margin-right: 2rem;
+}
+.company-name{
+  margin: 3rem 0 0 1rem;
+}
