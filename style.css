@@ -7,27 +7,47 @@ body{
   font-family: 'Roboto', sans-serif;
   font-size: 60%;
 }
+html{
+  scroll-behavior: smooth;
+}
 :root{
   --primary-color: #f08c00;
   --secondary-color: #000;
   --font-size: 1.5rem;
 }
+/* ******************* */
+/* Helper Classes */
+/* ******************* */
+ul li:nth-child(4){
+  margin-right: 2rem;
+}
+.company-name{
+  margin: 3rem 0 0 1rem;
+}
+.helper-{
+  margin-top: 1rem;
+}
+.helper--{
+  margin-top: 1.2rem;
+}
+/* ******************* */
 /* Reuseable classes */
+/* ******************* */
 .grid2{
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
-.img{
-  width: 100%;
+#hero-section{
+  padding: 9rem 0;
 }
-.aside-img{
-  width: 50%;
+.main-heading,.subheading{
+  text-align: center;
+  font-weight: 700;
+  font-size: 4rem;
 }
-/* .container- {
-  max-width: 120rem;
-  margin: 0 auto;
-} */
-
+.main-heading{
+  font-family: 'Italianno', cursive;
+}
 /* *************** */
 /* Header and Nav */
 /* *************** */
@@ -60,19 +80,26 @@ li{
 .contact:visited,
 .contact:link{
   padding: 1rem 2rem;
-  background-color: #f08c00;
+  background-color: #f59f00;
   border-radius: 3rem;
   color: #000;
   font-size: 1.5rem;
 }
 .contact:hover,
 .contact:active{
-  background-color: #f59f00;
+  background-color: #f08c00;
 }
 .company-name{
   color: var(--primary-color);
   font-weight: 700;
   font-size: 1.5rem;
+}
+.company-name:hover{
+  color: #f08c00;
+}
+.company-icon{
+  font-size: 2rem;
+  color: #000;
 }
 .active{
   color: var(--primary-color);
@@ -80,20 +107,166 @@ li{
 /* *************** */
 /* Hero */
 /* *************** */
+
 #hero-section{
   padding: 9rem 0;
+  background-color: #fff;
 }
 .text-box span{
   color: #f08c00;
   font-weight: 700;
 }
+.img{
+  width: 45%;
+  position: absolute;
+  top: 26%;
+  right: -10%;
+}
+.aside-img{
+  width: 20%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
 .heading-primary{
   font-size: 3rem;
+  color: #000;
 }
-/* Helper Classes */
-ul li:nth-child(4){
-  margin-right: 2rem;
+.btn-outline-danger{
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
-.company-name{
-  margin: 3rem 0 0 1rem;
+.btn-danger{
+  color: #fff;
+  background-color: #f08c00;
+  border-color: var(--primary-color);
+}
+.btn-danger:hover,
+.btn-danger:active{
+  background-color: #f59f00;
+  outline: #f59f00;
+}
+.btn-outline-danger:hover,
+.btn-outline-danger:active
+{
+  background-color: #f08c00f6;
+}
+/* *************** */
+/* Feature Section */
+/* *************** */
+#feature-section{
+  padding: 9rem 0;
+  background-color: #F1F1F1;
+}
+
+.subheading{
+  font-size: 1rem;
+  color: #f08c00;
+}
+.icon{
+  font-size: 3rem;
+  color: #000;
+}
+.ft-subheading{
+  font-size: 1.3rem;
+  color: #f08c00;
+  font-weight: 700;
+}
+.card-{
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
+  box-shadow: rgba(255, 165, 0, 0.4) -5px 5px, rgba(255, 165, 0, 0.3) -10px 10px, rgba(255, 165, 0, 0.2) -15px 15px, rgba(255, 165, 0, 0.1) -20px 20px, rgba(255, 165, 0, 0.05) -25px 25px;
+}
+.card--{
+  box-shadow: rgba(255, 165, 0, 0.4) 0px 5px, rgba(255, 165, 0, 0.3) 0px 10px, rgba(255, 165, 0, 0.2)  0px 15px, rgba(255, 165, 0, 0.1) 0px 20px, rgba(255, 165, 0, 0.05) 0px 25px;
+}
+.card---{
+  box-shadow: rgba(255, 165, 0, 0.4) 5px 5px, rgba(255, 165, 0, 0.3) 10px 10px, rgba(255, 165, 0, 0.2) 15px 15px, rgba(255, 165, 0, 0.1) 20px 20px, rgba(255, 165, 0, 0.05) 25px 25px;
+}
+/* *************** */
+/* Menu Section */
+/* *************** */
+#menu-section{
+  padding: 9rem 0;
+}
+.menu-icon{
+  color: #f08c00;
+}
+.stars-img{
+  width: 30%;
+}
+#menu-section .card-body{
+  padding: 0rem 1rem 1rem 1rem;
+}
+#menu-section .card-title span{
+  background-color: #f08c00;
+  padding: 0.2rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+}
+.menu{
+  margin-bottom: 5rem;
+}
+.fruit-img{
+  width: 78%;
+}
+.deluxe-img{
+  width: 78%;
+}
+.card-menu{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.card-img3{
+  width: 100%;
+}
+.view-more-box{
+  display: flex;
+  justify-content: center;
+}
+/* *************** */
+/* Testimonial Section */
+/* *************** */
+#testimonial-section{
+  padding: 9rem 0;
+  background-image: url('./Images/food/pecan\ salad\ and\ fish.jpg');
+  width: 100vw;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+.testimonial-img{
+  width: 100vw;
+}
+#testimonial-section .card-body{
+  padding: 0rem 1rem 1rem;
+}
+.t-img{
+  border-radius: 50%;
+}
+.testimonial-heading{
+  color: #f08c00;
+  font-family: 'Italianno';
+  font-size: 5rem;
+}
+.testimonial-subheading{
+  font-family: 'Italianno', cursive;
+  color: #f08c00;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.description{
+  color: #000;
+  text-align: center;
+}
+.stars--{
+  margin-left: 6rem;
+}
+.card-test:hover{
+  box-shadow:  rgba(255, 165, 0, 0.4) 0px 18px 50px -10px;
+}
+/* *************** */
+/* Reservation Section */
+/* *************** */
+#reservation{
+  padding: 9rem 0;
 }
