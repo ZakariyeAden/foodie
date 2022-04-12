@@ -15,6 +15,10 @@ html{
   --secondary-color: #000;
   --font-size: 1.5rem;
 }
+*:focus{
+  outline: none;
+  box-shadow: 0 0 0 0.8rem #e67e22;
+}
 /* ******************* */
 /* Helper Classes */
 /* ******************* */
@@ -33,10 +37,7 @@ ul li:nth-child(4){
 /* ******************* */
 /* Reuseable classes */
 /* ******************* */
-.grid2{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-}
+
 #hero-section{
   padding: 9rem 0;
 }
@@ -49,16 +50,40 @@ ul li:nth-child(4){
   font-family: 'Italianno', cursive;
 }
 /* *************** */
+/* Hamburger menu */
+/* *************** */
+.active{
+  display: block;
+}
+.hamburger {
+  position: absolute;
+  top: 1.5rem;
+  right: -24rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 3rem;
+  height: 2rem;
+}
+
+.hamburger .line {
+  height: 0.3rem;
+  width: 100%;
+  background: #000;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+/* *************** */
 /* Header and Nav */
 /* *************** */
-nav{
-  /* font-size: 1.5rem; */
-}
+
 ul {
  display: flex;
  justify-content: flex-end;
  align-content: center;
  gap: 2rem;
+ min-height: 8vh;
+ 
 }
 li{
   list-style: none;
@@ -172,6 +197,9 @@ li{
   color: #f08c00;
   font-weight: 700;
 }
+.card{
+  width: 18rem;
+}
 .card-{
   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
   box-shadow: rgba(255, 165, 0, 0.4) -5px 5px, rgba(255, 165, 0, 0.3) -10px 10px, rgba(255, 165, 0, 0.2) -15px 15px, rgba(255, 165, 0, 0.1) -20px 20px, rgba(255, 165, 0, 0.05) -25px 25px;
@@ -222,12 +250,15 @@ li{
   display: flex;
   justify-content: center;
 }
+#menu-section .card:nth-child(3){
+  height: 27rem;
+}
 /* *************** */
 /* Testimonial Section */
 /* *************** */
 #testimonial-section{
   padding: 9rem 0;
-  background-image: url('./Images/food/pecan\ salad\ and\ fish.jpg');
+  background-image: url(../Images/pecan.jpg);
   width: 100vw;
   background-position: center;
   background-repeat: repeat;
@@ -269,4 +300,53 @@ li{
 /* *************** */
 #reservation{
   padding: 9rem 0;
+  background: #F1F1F1;
+}
+#reservation .row{
+  box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #f08c00,#e67e22);
+}
+.form-heading,
+.reserve-heading{
+  color: #000;
+}
+.form-heading{
+  margin-top: 5rem;
+  border-bottom: 4px solid #e67e22;
+}
+#map{
+  height: 100vh;
+}
+.reserve-heading{
+  /* color: #f08c00; */
+}
+
+.cta-form label{
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 0.75rem;
+}
+.cta-form input{
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  border-radius: 2rem;
+  border: none;
+}
+.form-btn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.contact-{
+  background-color:black;
+  color: #e67e22;
+  padding: 1rem 3rem;
+}
+.contact-:hover{
+  background-color:#e67e22;
+  border: 2px solid #000;
 }

@@ -12,34 +12,43 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Roboto&display=swap" rel="stylesheet">
   <!-- Style -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/mediaqueries.css">
   <title>Foodie</title>
 </head>
 <body>
   <header>
     <nav>
-      <a href="#" class="company-name"><span><ion-icon name="restaurant-outline" class="company-icon"></ion-icon></span>Foodie</a>
+      <a href="#hero-section" class="company-name"><span><ion-icon name="restaurant-outline" class="company-icon"></ion-icon></span>Foodie</a>
       <ul>
         <li><a href="#hero-section" class="link active">Home</a></li>
         <li><a href="#feature-section" class="link">Services</a></li>
         <li><a href="#menu-section" class="link">Menu</a></li>
-        <li><a href="#reservation" class=" contact">Reservation</a></li>
+        <li><a href="#reservation" class="btn btn-lg btn-danger">Reservation</a></li>
       </ul>
+
+      <a href="#" class="hamburger">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </a>
     </nav>
   </header>
 
   <main>
     <section id="hero-section" class="hero-section">
       <div class="container">
-        <div class="grid2">
-          <div class="text-box">
-            <h1 class="heading-primary">Make Your Friends have the best <span>Appetite</span> in their life!</h1>
-            <button type="button "class="btn btn-lg btn-danger mt-5 me-2">See our Menu</button>
-            <button type="button "class="btn btn-lg btn-outline-danger mt-5">Reservation</button>
-          </div>
-          <div class="d-flex">
-            <img src="./Images/food/hero-aside.png" class="aside-img" alt="">
-            <img src="./Images/food/Hero.png" class="img" alt="Plate of food">
+        <div class="row">
+          <div class=" col-md-6">
+            <div class="text-box">
+              <h1 class="heading-primary">Make Your Friends have the best <span>Appetite</span> in their life!</h1>
+              <button type="button "class="btn btn-lg btn-danger mt-5 me-2">See our Menu</button>
+              <button type="button "class="btn btn-lg btn-outline-danger mt-5">Reservation</button>
+            </div>
+            <div class="d-flex col-md-6">
+              <img src="./Images/food/hero-aside.png" class="aside-img" alt="">
+              <img src="./Images/food/Hero.png" class="img" alt="Plate of food">
+            </div>
           </div>
         </div>
       </div>
@@ -47,11 +56,11 @@
 
 <section id="feature-section" class="feature-section">
   <div class="container">
-    <h3 class="main-heading">Our Services</h3>
+    <h3 class="main-heading service-heading">Our Services</h3>
     <p class="subheading">We love to welcome our guest with great satisfaction!</p>
     <div class="row">
       <div class="col-md-4 col-4">
-        <div class="card card-" style="width: 18rem;">
+        <div class="card card-" >
           <div class="card-body">
             <ion-icon name="fast-food-outline" class="icon"></ion-icon>
             <h6 class="card-subtitle mb-2 ft-subheading mt-auto">Fine Dining</h6>
@@ -61,7 +70,7 @@
       </div>
 
       <div class="col-md-4 col-4">
-        <div class="card card--" style="width: 18rem;">
+        <div class="card card--" >
           <div class="card-body">
             <ion-icon name="happy-outline" class="icon"></ion-icon>
             <h6 class="card-subtitle mb-2 ft-subheading mt-auto">Quick Service</h6>
@@ -71,7 +80,7 @@
       </div>
 
       <div class="col-md-4 col-4">
-        <div class="card card---" style="width: 18rem;">
+        <div class="card card---" >
           <div class="card-body">
             <ion-icon name="heart-outline" class="icon"></ion-icon>
             <h6 class="card-subtitle mb-2 ft-subheading mt-auto">Customer Statisfaction</h6>
@@ -89,7 +98,7 @@
     <h3 class="main-heading menu">Our Menu<span class="mx-2"><ion-icon name="restaurant-outline" class="company-icon menu-icon"></ion-icon></span></h3>
     <div class="row">
       <div class="col-md-4 col-4">
-        <div class="card card-menu" style="width: 18rem;">
+        <div class="card card-menu" >
           <img src="./Images/food/Burger.jpg" class="card-img-top" alt="Burger">
           <img src="./Images/stars/5stars.png" class="stars-img mx-2" alt="5 Stars">
           <div class="card-body">
@@ -101,7 +110,7 @@
       </div>
 
       <div class="col-md-4 col-4">
-        <div class="card card-menu" style="width: 18rem;">
+        <div class="card card-menu" >
           <img src="./Images/food/fruits.jpg" class="card-img-top fruit-img" alt="Fruits and vegetable">
           <img src="./Images/stars/5stars.png" class="stars-img mx-2" alt="5 Stars">
           <div class="card-body">
@@ -112,7 +121,7 @@
         </div>
       </div>
     <div class="col-md-4 col-4">
-      <div class="card card-menu card-3" style="width: 18rem; height: 27rem;">
+      <div class="card card-menu card-3" >
         <img src="./Images/food/Deluxe fruit.jpg" class="card-img-top deluxe-img card-img3" alt="Deluxe Fruits">
         <img src="./Images/stars/5stars.png" class="stars-img mx-2 helper--"  alt="5 Stars">
         <div class="card-body ">
@@ -124,7 +133,7 @@
     </div>
 
     <div class="col-md-4 col-4">
-      <div class="card card-menu mt-5" style="width: 18rem;">
+      <div class="card card-menu mt-5" >
         <img src="./Images/food/fish and fruits-1.jpg" class="card-img-top deluxe-img" alt="Deluxe Fruits">
         <img src="./Images/stars/5stars.png" class="stars-img mx-2" alt="5 Stars">
         <div class="card-body">
@@ -136,7 +145,7 @@
     </div>
 
     <div class="col-md-4 col-4">
-      <div class="card card-menu mt-5" style="width: 18rem;">
+      <div class="card card-menu mt-5" >
         <img src="./Images/food/Lettuce fish and rice.jpg" class="card-img-top " alt="Deluxe Fruits">
         <img src="./Images/stars/5stars.png" class="stars-img mx-2" alt="5 Stars">
         <div class="card-body">
@@ -148,8 +157,8 @@
     </div>
 
     <div class="col-md-4 col-4">
-      <div class="card card-menu mt-5" style="width: 18rem;">
-        <img src="./Images/food/pecan salad and fish.jpg" class="card-img-top deluxe-img" alt="Deluxe Fruits">
+      <div class="card card-menu mt-5" >
+        <img src="./Images/pecan.jpg" class="card-img-top deluxe-img" alt="Deluxe Fruits">
         <img src="./Images/stars/5stars.png" class="stars-img mx-2" alt="5 Stars">
         <div class="card-body">
           <h5 class="card-title menu-heading">Pecan Salad and Fish <span>$21.99</span></h5>
@@ -171,7 +180,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-4 mt-5">
-        <div class="card card-test" style="width: 18rem;">
+        <div class="card card-test" >
           <img src="./Images/testimonal/aftheem-ibrahim.jpg" class="card-img-top " alt="Deluxe Fruits">
           <img src="./Images/stars/5stars.png" class="stars-img  stars--" alt="5 Stars">
           <div class="card-body">
@@ -182,7 +191,7 @@
       </div>
 
       <div class="col-md-4 col-4 mt-5">
-        <div class="card card-test" style="width: 18rem;">
+        <div class="card card-test" >
           <img src="./Images/testimonal/joseph-gonzalez.jpg" class="card-img-top " alt="Deluxe Fruits">
           <img src="./Images/stars/5stars.png" class="stars-img  stars--" alt="5 Stars">
           <div class="card-body">
@@ -192,8 +201,8 @@
         </div>
       </div>
 
-      <div class="col-md-4 col-4 mt-5">
-        <div class="card card-test" style="width: 18rem;">
+      <div class="col-md-4 col-4 mt-5 order-lg-">
+        <div class="card card-test" >
           <img src="./Images/testimonal/petr-sevcovic-HzDF-rxlSeM-unsplash.jpg" class="card-img-top " alt="Deluxe Fruits">
           <img src="./Images/stars/5stars.png" class="stars-img  stars--" alt="5 Stars">
           <div class="card-body">
@@ -207,15 +216,49 @@
 </section>
 
   <section id="reservation" class="reservation">
+    <h4 class="main-heading reserve-heading">Book Your Table, Skip the line!</h4>
     <div class="container">
       <div class="row">
-        <div class="col-md-6">assasa</div>
-        <div class="col-md-6">assasa</div>
+        <div class="col-md-6 col-sm-push-6" id="map"></div>
+        <div class="col-md-6 col-sm-push-6">
+          <h6 class="form-heading main-heading">Were excited to welcome You!</h6>
+          <form action="#" class="cta-form">
+            <div class="">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" placeholder="First Name" required>
+            </div>
+
+            <div class="">
+              <label for="first-name">Last Name</label>
+              <input type="text" id="last-name" placeholder="Last Name" required>
+            </div>
+
+            <div class="">
+              <label for="first-name">Email address</label>
+              <input type="email" id="first-name" placeholder="email@gmail.com" required>
+            </div>
+
+            <div class="">
+              <label for="table">How many people for table?</label>
+              <input type="number" id="first-name" placeholder="0" required>
+            </div>
+
+            <div class="form-btn">
+              <button type="button "class="btn btn-lg contact-  mt-5">Submit</button>
+            </div>
+
+          </form>
+        </div>
+
       </div>
     </div>
   </section>
   </main>
-
+  
+  <!-- Google Api -->
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <!-- App.js -->
+  <script src="app.js"></script>
   <!-- ion-icons -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
