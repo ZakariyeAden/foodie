@@ -17,3 +17,89 @@ function initialize(){
 }
 google.maps.event.addDomListener(window, 'load', initialize);
 
+// Sticky navigation
+
+// const heroSection = document.querySelector('#hero-section');
+
+// const obs = new IntersectionObserver(
+//   function(entries){
+//     const ent = entries[0];
+//     console.log(ent);
+
+//     if(ent.isIntersecting === false){
+//       document.body.classList.add("sticky");
+//     }
+
+//     if(ent.isIntersecting === false){
+//       document.body.classList.add("sticky");
+//     }
+//   },
+//   {
+//     // In the viewport
+//     root: null,
+//     threshold: 0,
+//     rootMargin: "-80px",
+//   }
+// );
+// obs.observe(heroSection);
+
+
+
+// Animation scroll reveal
+window.sr = new ScrollReveal();
+sr.reveal('.btn', { delay: 2000 });
+sr.reveal('.heading-primary', { 
+  duration: 2000,
+  origin: 'bottom',
+});
+sr.reveal('.aside-img',{
+  duration: 2000,
+  origin: 'left',
+  distance:'300px'
+});
+sr.reveal('.img',{
+  duration: 2000,
+  origin: 'top',
+  distance:'300px'
+});
+sr.reveal('nav',{
+  duration: 2000,
+  origin: 'top',
+  distance:'300px'
+});
+sr.reveal('.appetite',{
+  duration: 5000,
+  origin: 'bottom',
+  distance:'300px'
+});
+
+sr.reveal('.main-heading',{
+  duration: 5000,
+  origin: 'bottom',
+  distance:'300px'
+});
+sr.reveal('.menu',{
+  duration: 5000,
+  origin: 'bottom',
+  distance:'300px'
+});
+sr.reveal('.card',{
+  duration: 2000,
+  origin: 'bottom',
+  distance:'300px'
+});
+sr.reveal('.ft-subheading',{
+  duration: 2000,
+  origin: 'bottom',
+  distance:'300px'
+});
+sr.reveal('.testimonial-subheading',{
+  duration: 4000,
+  origin: 'bottom',
+  distance:'300px'
+});
+sr.reveal('#mp',{
+  duration: 5000,
+  origin: 'top',
+  distance:'300px'
+});
