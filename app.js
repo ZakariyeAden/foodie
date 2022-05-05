@@ -17,6 +17,26 @@ function initialize(){
 }
 google.maps.event.addDomListener(window, 'load', initialize);
 
+// Get modal, span, and close btn
+let modal = document.getElementById('modal');
+let btn = document.getElementById('triggerModal');
+var span = document.getElementsByClassName('close')[0];
+// When the user clicks on the btn 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+// When the user clicks on the span
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 // Sticky navigation
 
 // const heroSection = document.querySelector('#hero-section');
